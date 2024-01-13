@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(230, 235, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link {
+        padding: 10px;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        background-color: #fff;
+        border-radius: 7px;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: 0.20s all ease-in-out;
+        &:hover {
+            box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.2);
+        }
+        &:active {
+            background-color: #000000;
+            color: #fff;
+        }
+      }
+  }
+  
+
+
+.Modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    text-align: center;
+
+    &__btn {
+    background: rgb(230, 235, 239);
+    padding: 18px 25px;
+    border-radius: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 23px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+
+        &:active {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            transform: translateY(0);
+        }
+    }
+}
+
+
+
+.Photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    &__list {
+        list-style: none;
+        padding: 10px;
+        li {
+            padding: 10px;
+            display: inline-block;
+            background-color: #fff;
+            border-radius: 7px;
+            margin-right: 5px;
+            cursor: pointer;
+            transition: 0.20s all ease-in-out;
+            &:hover {
+                box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.2);
+            }
+            &.active {
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+    &__search {
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid #ccc;
+        outline: none;
+        margin: 10px;
+    }
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-top: 20px;
+    li {
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 10px;
+        outline: none;
+        background-color: #fff;
+
+    }
+    .active {
+        color: #fff;
+        background-color: #000000;
+    }
+}
+
+
+.Currency {
+    display: flex;
+    margin: 100px auto;
+    padding: 30px;
+    width: 620px;
+    background: rgb(230, 235, 239);
+    border-radius: 15px;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.Invitation {
+    width: 420px;
+    height: 685px;
+    margin: 30px auto;
+    background: rgb(230, 235, 239);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+  }
+  
+
+
+.Quiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    border-radius: 30px;
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        height: 50px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:before {
+        width: 95%;
+        bottom: -10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 0;
+    }
+
+    &:after {
+        width: 90%;
+        bottom: -20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: 1;
+    }
+
+}  
