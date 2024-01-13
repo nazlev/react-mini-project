@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Photo from '../Photo/Photo';
+import Photo from '../Projects/Photo/Photo';
 
 function PhotoPage() {
   const [isLoading, setIsLoading] = useState(true);

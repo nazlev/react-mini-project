@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Game from '../Quiz/Game';
-import Result from '../Quiz/Result';
-import questions from '../Quiz/Questions';
+import Game from '../Projects/Quiz/Game';
+import Result from '../Projects/Quiz/Result';
+import questions from '../Projects/Quiz/Questions';
 
 const QuizPage = () => {
   const [step, setStep] = useState(0);

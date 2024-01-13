@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import Block from "../Currency/Block";
+import Block from "../Projects/Currency/Block";
 
 function CurrencyPage() {
   const [fromCurrency, setFromCurrency] = useState('UAH');
   const [toCurrency, setToCurrency] = useState('USD');
-  const [fromPrice, setFromPrice] = useState(0);
-  const [toPrice, setToPrice] = useState(1);
+  const [fromPrice, setFromPrice] = useState(1);
+  const [toPrice, setToPrice] = useState(0);
   const ratesRef = useRef({});
 
 
@@ -27,7 +27,7 @@ function CurrencyPage() {
     const startValue = value / ratesRef.current[fromCurrency];
     const resultValue = startValue * ratesRef.current[toCurrency];
     setFromPrice(value);
-    setToPrice(resultValue.toFixed(3));
+    setToPrice(resultValue.toFixed(2));
   };
 
 
@@ -40,7 +40,7 @@ function CurrencyPage() {
   const onChangeToInput = (value) => {
     const startResult = ratesRef.current[fromCurrency] / ratesRef.current[toCurrency];
     const result = value * startResult;
-    setFromPrice(result.toFixed(3));
+    setFromPrice(result.toFixed(2));
     setToPrice(value);
   }
 

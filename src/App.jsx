@@ -1,12 +1,6 @@
 import {Route, Routes, Link} from "react-router-dom";
-import CurrencyPage from "./Pages/CurrencyPage";
-import InvitationPage from "./Pages/InvitationPage";
-import ModalPage from "./Pages/ModalPage";
-import NotFound from "./Pages/NotFound";
-import PhotoPage from "./Pages/PhotoPage";
-import QuizPage from "./Pages/QuizPage";
-import './styles/index.scss'
 import { routes } from "./Routes/routes";
+import './styles/index.scss'
 
 function App() {
 

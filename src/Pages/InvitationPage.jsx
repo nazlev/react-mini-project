@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Success } from '../Invitation/Success';
-import { Users } from '../Invitation/Users/Users';
+import { Success } from '../Projects/Invitation/Success';
+import { Users } from '../Projects/Invitation/Users/Users';
 
 function InvitationPage() {
   const [items, setItems] = useState([]);
